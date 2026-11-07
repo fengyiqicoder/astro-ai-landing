@@ -1,0 +1,34 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build
+        uses: withastro/action@v6
+        env:
+          # Add your key as a repository secret named ONETAG_KEY (Settings → Secrets and variables → Actions).
+          PUBLIC_ONETAG_KEY: ${{ secrets.ONETAG_KEY }}
+          # Delete this line for a user or organization page (you.github.io).
+          BASE_PATH: /${{ github.event.repository.name }}
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v5
