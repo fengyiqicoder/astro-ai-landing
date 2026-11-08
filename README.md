@@ -56,6 +56,11 @@ src/styles/global.css         Tailwind 4 theme tokens: colors and fonts
 .github/workflows/deploy.yml  GitHub Pages
 ```
 
+## See also
+
+- [Lantern](https://github.com/fengyiqicoder/astro-docs-ai): the matching docs template, with an Ask AI dialog that answers from your pages.
+- [Static AI Block](https://github.com/fengyiqicoder/static-ai-block): twelve copy-paste AI blocks for any static page.
+
 ## License
 
 MIT.
