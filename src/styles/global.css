@@ -1,18 +1,25 @@
 @import "tailwindcss";
 
-/* Harbor palette: deep harbor-blue ink, sea-glass accent, warm paper. Change these to re-brand. */
+/* OneTag design kit: white paper with a fine grid, system fonts, 1px hairlines, square corners, one blue. Change these to re-brand. */
 @theme {
-	--color-ink: #0f1f2e;
-	--color-ink-soft: #3d4f61;
-	--color-paper: #f7f8f6;
-	--color-paper-deep: #e9eee9;
-	--color-glass: #0f8f85;
-	--color-glass-deep: #0a6b63;
-	--color-glass-wash: #d8f0ec;
-	--color-line: #d5dbd6;
-	--font-sans: "Instrument Sans", system-ui, sans-serif;
-	--font-display: "Bricolage Grotesque", "Instrument Sans", system-ui, sans-serif;
+	--color-ink: #0b1020;
+	--color-ink-soft: #5c667d;
+	--color-paper: #ffffff;
+	--color-paper-deep: #f5f7fb;
+	--color-glass: #0b5fff;
+	--color-glass-deep: #0747c2;
+	--color-glass-wash: #e9f0ff;
+	--color-line: #d8dee9;
+	--font-sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+	--font-display: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+	--radius-*: initial;
+	--radius-none: 0;
 }
+body {
+	background-image: linear-gradient(to right, rgba(11, 16, 32, 0.045) 1px, transparent 1px), linear-gradient(to bottom, rgba(11, 16, 32, 0.045) 1px, transparent 1px);
+	background-size: 24px 24px;
+}
+h1, h2, h3 { letter-spacing: -0.02em; }
 
 html {
 	scroll-behavior: smooth;
@@ -23,6 +30,6 @@ html {
 	}
 }
 :focus-visible {
-	outline: 3px solid var(--color-glass);
-	outline-offset: 2px;
+	outline: 2px solid var(--color-glass);
+	outline-offset: -1px;
 }

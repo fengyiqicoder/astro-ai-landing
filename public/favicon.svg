@@ -1,1 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" rx="7" fill="#0f1f2e"/><path d="M8 20c2.5 0 2.5 2 5 2s2.5-2 5-2 2.5 2 5 2" fill="none" stroke="#0f8f85" stroke-width="2.5" stroke-linecap="round"/><path d="M16 6v10M11 11h10" stroke="#f7f8f6" stroke-width="2.5" stroke-linecap="round"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <rect width="64" height="64" fill="#0B5FFF"/>
+  <path d="M20 16 L6 32 L20 48" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="square" stroke-linejoin="miter"/>
+  <path d="M44 16 L58 32 L44 48" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="square" stroke-linejoin="miter"/>
+  <!-- a flag -->
+  <rect x="25" y="20" width="4.5" height="24" fill="#FFFFFF"/><path d="M29.5 20 L41 25 L29.5 30 Z" fill="#FFFFFF"/>
+</svg>

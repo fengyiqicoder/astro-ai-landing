@@ -1,8 +1,5 @@
 # Astro AI Landing Page
 
-> This template now lives in [astro-ai-starter](https://github.com/fengyiqicoder/astro-ai-starter) as `examples/landing`, next to a blog and a docs site with the same AI wiring. This repository is kept as a standalone copy for `npm create astro` and theme directories, and is synced from there.
-
-
 Free Astro landing page template with built-in AI. Visitors ask the page questions and check whether the product fits them; every answer is written from the page's own copy. Tailwind 4, OneTag AI, Lighthouse 100, one-click deploy, MIT.
 
 **Live demo:** https://fengyiqicoder.github.io/astro-ai-landing/ · try the fit check at the top and the question box in the FAQ.
